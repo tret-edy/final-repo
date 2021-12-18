@@ -2,6 +2,7 @@
 <%@page import="java.sql.ResultSet" %>
 <%@page import="java.sql.Statement" %>
 <%@page import="java.sql.Connection" %>
+<%@page import="java.sql.PreparedStatement" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
@@ -11,11 +12,22 @@
 <head>
   <title>Repo-X Software Repository System</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style type="text/css">
+body {
+           font-family: "Cardo";
+  font-weight: normal;
+  font-style: normal;
+   }
+        
+
+tbc {
+  
+}</style>
 </head>
 
 <body>
    <header>
-         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #4CAF50">
+         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000080">
          <div>
             <a href="index.jsp" class="navbar-brand"> Repo-X Software Repository System </a>
           </div>
@@ -25,11 +37,13 @@
 
             <div class="row">
                 <!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
-
+				
+			
+				
                 <div class="container">
                     <h3 class="text-center">List of Softwares</h3>
                     <hr>
-    <div class="col-md-6">
+    <div class="text-center">
          <a href="Add.jsp" class="btn btn-primary">Add New Software</a>
     </div>
 <p></p>
@@ -68,7 +82,7 @@
          <td><%=res.getString("swDesc")%></td>
          <td><%=res.getString("swCat")%></td>
          <td class="text-center">
-           <a href='Edit.jsp?u=<%=res.getString("swNum")%>' class="btn btn-warning">Edit</a>
+           <a href='Edit.jsp?u=<%=res.getString("swNum")%>' class="btn btn-warning" style= "background-color: #37fd12; border-color: #37fd12 ;">Edit</a>
            <a href='Delete.jsp?d=<%=res.getString("swNum")%>' class="btn btn-danger">Delete</a>
          </td>
         </tr>

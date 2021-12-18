@@ -14,7 +14,7 @@
 
 <body>
    <header>
-         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #4CAF50">
+         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000080">
          <div>
             <a href="index.jsp" class="navbar-brand"> Repo-X Software Repository System </a>
           </div>
@@ -49,8 +49,9 @@
 					     <label>Category</label>
 					     <input type="text" class="form-control" name="swCat" placeholder="Software Category"/>
 					   </div>
-					   <button type="submit" class="btn btn-primary">Submit</button>
-					   <a href="index.jsp" class="btn btn-default">Back</a>
+					   <a href="index.jsp" class="btn btn-default text-center">Back</a>
+					   <button type="submit" class="btn btn-primary text-center">Submit</button>
+					   
 					</form>
                 </div>
 </body>

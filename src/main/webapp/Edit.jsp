@@ -14,7 +14,7 @@
 
 <body>
    <header>
-         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #4CAF50">
+         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #0000800">
          <div>
             <a href="index.jsp" class="navbar-brand"> Repo-X Software Repository System </a>
           </div>
@@ -69,8 +69,9 @@
    			<%
             }
    			%>
-   			<button type="submit" class="btn btn-warning">Update</button>
    			<a href="index.jsp" class="btn btn-default">Back</a>
+   			<button type="submit" class="btn btn-warning">Update</button>
+   			
    			</form>
    			</div></div>
    			</body>
