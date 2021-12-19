@@ -10,15 +10,72 @@
 <head>
   <title>Repo-X Software Repository System</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+body {
+	font-family: "Cardo";
+}
+
+.footer_area {
+  background-color: #000080;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 0px;}
+
+.footer_shape_1 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  z-index: -1; }
+  .footer_shape_1 img {
+    width: 130px;
+    opacity: 0.31; }
+
+@media (max-width: 767px) {
+  .footer_widget .footer_logo a img {
+    width: 160px; } }
+.footer_widget .footer_title {
+  margin-top: 30px; }
+  .footer_widget .footer_title .title {
+    font-size: 52px;
+    color: #38424D; }
+    @media (max-width: 767px) {
+      .footer_widget .footer_title .title {
+        font-size: 38px; } }
+    .footer_widget .footer_title .title span {
+      color: #D59A57; }
+.footer_widget .footer_menu {
+  margin-top: 30px; }
+  .footer_widget .footer_menu li {
+    display: inline-block;
+    margin: 0 20px; }
+    .footer_widget .footer_menu li a {
+      font-size: 16px;
+      color: #38424D;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+      .footer_widget .footer_menu li a:hover {
+        color: #D59A57; }
+
+.footer_copyright {
+  border-top: 2px solid #D59A57;
+  padding: 40px 0; }
+
+</style>
 </head>
 
 <body>
    <header>
-         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #0000800">
+         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000080">
          <div>
             <a href="index.jsp" class="navbar-brand"> Repo-X Software Repository System </a>
           </div>
-         </nav>
+        </nav>
       </header>
             <br>
 			<div class="row">
@@ -70,10 +127,16 @@
             }
    			%>
    			<a href="index.jsp" class="btn btn-default">Back</a>
-   			<button type="submit" class="btn btn-warning">Update</button>
+   			<button type="submit" class="btn btn-warning" style="background-color: #007bff; color:#ffff;"  >Update</button>
    			
    			</form>
-   			</div></div>
+   			</div></div><br><br>
+   			<footer id="footer" class="footer_area">
+        <div class="footer_copyright text-center" style="color:white">
+        	<p>Copyright © <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script>. All Rights Reserved, by Repo-X <a href= "index.jsp"></a></p></div></footer>
    			</body>
    			</html>
    			<%
